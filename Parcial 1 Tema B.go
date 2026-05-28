@@ -23,7 +23,7 @@ AMBIENTE
 PROCESO
 	ARR(Editorial);AVZ(Editorial, Ed);
 	ARR(Libros);AVZ(Libros, lib);
-	Crear(Sal); bandEd:= Falso; bandSal:= Falso;
+	Crear(Sal); 
 	EdAuto:= 0;
 	Mientras NFDS(Editorial) hacer
 		Pal:= 0;
@@ -31,6 +31,7 @@ PROCESO
 			AVZ(Editorial, Ed);
 		fmientras;
 		AVZ(Editorial, Ed);
+		bandEd:= Falso; bandSal:= Falso;
 		Mientras lib <> '@' hacer
 			si lib = 'A' entonces
 				bandEd:= Verdadero;

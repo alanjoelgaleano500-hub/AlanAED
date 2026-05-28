@@ -23,7 +23,7 @@ AMBIENTE
 PROCESO
 	ARR(Editorial);AVZ(Editorial, Ed);
 	ARR(Libros);AVZ(Libros, lib);
-	Crear(Sal); bandSal:= Falso;
+	Crear(Sal); 
 	Mientras NFDS(Editorial) hacer
 		cant_lib:= 0; long_r:= 0;
 		Mientras Ed <> '&' hacer
@@ -34,7 +34,7 @@ PROCESO
 			prov:= prov*10 + Conv(Ed);
 			AVZ(Editorial, Ed);
 		fpara;
-		cant_lib:= cant_lib + 1;
+		cant_lib:= cant_lib + 1; bandSal:= Falso;
 		Mientras lib <> '@' hacer
 			si lib = 'L' entonces
 				bandSal:= Verdadero;
