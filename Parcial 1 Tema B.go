@@ -31,8 +31,9 @@ PROCESO
 			AVZ(Editorial, Ed);
 		fmientras;
 		AVZ(Editorial, Ed);
-		bandEd:= Falso; bandSal:= Falso;
+		bandEd:= Falso;
 		Mientras lib <> '@' hacer
+			bandSal:= Falso;
 			si lib = 'A' entonces
 				bandEd:= Verdadero;
 			fsi;

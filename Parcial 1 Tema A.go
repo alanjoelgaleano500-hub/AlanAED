@@ -34,8 +34,9 @@ PROCESO
 			prov:= prov*10 + Conv(Ed);
 			AVZ(Editorial, Ed);
 		fpara;
-		cant_lib:= cant_lib + 1; bandSal:= Falso;
+		cant_lib:= cant_lib + 1;
 		Mientras lib <> '@' hacer
+			bandSal:= Falso;
 			si lib = 'L' entonces
 				bandSal:= Verdadero;
 			fsi;
