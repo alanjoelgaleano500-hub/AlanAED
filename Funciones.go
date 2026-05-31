@@ -1,6 +1,6 @@
 ACCION Funciones es
 AMBIENTE
-	a, b, c, alt1, alt2, mult, nomult, cantf, x, y: entero
+	a, b, c, alt1, alt2, mult, nomult, cantf, x, y, i: entero
 	seguir: ('V', 'F')
 	opcion: 1..2
 	procedimiento coeficientes() es
@@ -61,7 +61,7 @@ PROCESO
 	segun opcion hacer
 		1:	Escribir("Ingrese cantidad de funciones a tratar: ");
 			Leer(cantf);
-			para cantf hasta 0, -1 hacer
+			para i:= cantf hasta 0, -1 hacer
 				coeficientes();
 				funciones();
 			fpara;
