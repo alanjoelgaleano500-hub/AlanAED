@@ -68,6 +68,7 @@ PROCESO
 		2:	mientras seguir = 'V' hacer
 				coeficientes();
 				funciones();
+				continuar();
 			fmientras;
 		otro:	Escribir("Error: Opcion NO valida.");
 	fsegun;
