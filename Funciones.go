@@ -44,8 +44,8 @@ AMBIENTE
 		Escribir("Los y NO multiplos de 11 son: ", nomult);
 	fprocedimiento.
 	procedimiento funciones() es
+		mult:= 0; nomult:= 0;
 		para x:= 20 hasta -20, -2 hacer
-			mult:= 0; nomult:= 0;
 			y:= a*(x**2) + b*x + c;
 			resultados();
 		fpara;
