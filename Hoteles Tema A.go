@@ -36,6 +36,7 @@ PROCESO
 	ARR(reservas); AVZ(reservas, resv);
 	CREAR(salida);
 	mientras NFDS(hotel) hacer
+		cant_resv:= 0;
 		mientras hot <> "&" hacer
 			AVZ(hotel, hot);
 		fmientras;

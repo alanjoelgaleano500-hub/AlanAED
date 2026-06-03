@@ -36,6 +36,7 @@ PROCESO
 	ARR(ventas); AVZ(ventas, vent);
 	CREAR(salida);
 	mientras NFDS(sucursales) hacer
+		cant_tick:= 0;
 		mientras suc <> "&" hacer
 			AVZ(sucursales, suc);
 		fmientras;
